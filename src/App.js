@@ -10,8 +10,8 @@ function App() {
   const questionIndex = questionNumber-1;
 
   const handleNext = answer => {
-    setQuestionNumber((prev) => prev + 1);
-    setNumCorrect((prev) => (answer.correct ? prev + 1 : prev));
+    setQuestionNumber(prev => prev + 1);
+    setNumCorrect(prev => answer.correct ? prev + 1 : prev);
   };
   const handleSubmit = answer => {
     setNumCorrect(prev => answer.correct ? prev+1 : prev);
